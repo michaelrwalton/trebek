@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+header {
+  padding: 10px
+}
+
+.points {
+  display: flex;
+  justify-content: space-around;
+}
+
+.profile {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: solid;
+}
+
+.point {
+  background-color: #808080; /* Gray background */
+  border: none; /* Remove default border */
+  color: white; /* White text */
+  padding: 12px 24px; /* Padding for size */
+  font-family: Arial, sans-serif; /* Font family */
+  border-radius: 10px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s, transform 0.3s;
+  min-height: 10vh;
+  min-width: 10vw;
+  font-size: calc(10px + 2vmin);
+  align-content: center;
+}
+.point:hover {
+  background-color: #696969; /* Darker gray on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+.point:active {
+  background-color: #505050; /* Even darker gray on click */
+  transform: scale(1); /* Return to original size on click */
+}
+.gray-button:focus {
+  outline: none; /* Remove default focus outline */
+  box-shadow: 0 0 0 3px rgba(128, 128, 128, 0.5); /* Custom focus outline */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
